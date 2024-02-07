@@ -1,0 +1,10 @@
+<h3>Employee Login</h3>
+<br>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit">
+    <br>
+    <p>If you do not have a login please click <a href="{% url 'register_employee' %}">here</a>.</p>
+</form>
